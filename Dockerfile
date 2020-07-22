@@ -8,4 +8,4 @@ RUN /bin/cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
 
 EXPOSE 11211
 
-CMD ["memcached","-m","64","-u","root"]
+ENTRYPOINT ["memcached","-m","64","-u","root"]
